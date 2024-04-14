@@ -1,13 +1,18 @@
-import { PowerIcon, Bars3BottomLeftIcon } from "@heroicons/react/24/outline";
+import { Bars3BottomLeftIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Button from "./button";
 
 function Nav() {
 	return (
-		<div className="py-6 px-12 flex justify-between items-center">
-			<div className="flex w-3/12 justify-start space-x-4">
-				<Image src="/s-logo.png" width={45} height={45} />
-				<h1 className="text-xl flex items-center font-bold">
+		<div className="py-6 px-20 flex justify-between items-center">
+			<div className="flex w-3/12 justify-start">
+				<Image
+					src="/logo1.png"
+					width={45}
+					height={45}
+					className="mr-3"
+				/>
+				<h1 className="text-xl flex items-center font-bold mr-6">
 					CRYPTO SETH
 				</h1>
 
@@ -24,9 +29,9 @@ function Nav() {
 			</div>
 			<div className="flex w-3/12 justify-end space-x-4">
 				<Button>• &nbsp;BECOME A MEMBER</Button>
-				<div className="rounded-full bg-white p-5 w-16 h-16 antialiased">
+				<button className="rounded-full bg-white p-5 w-16 h-16 antialiased">
 					<Bars3BottomLeftIcon />
-				</div>
+				</button>
 			</div>
 		</div>
 	);

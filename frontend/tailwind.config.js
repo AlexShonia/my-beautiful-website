@@ -15,6 +15,12 @@ module.exports = {
 			colors: {
 				"button-bg": "#604cfa",
 			},
+			fontSize: {
+				"10xl": "9rem",
+			},
+			borderRadius: {
+				"4xl": "2rem",
+			}
 		},
 	},
 	plugins: [],
