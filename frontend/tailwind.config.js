@@ -5,6 +5,7 @@ module.exports = {
 		"./components/**/*.{js,ts,jsx,tsx,mdx}",
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
+	darkMode: "class",
 	theme: {
 		extend: {
 			backgroundImage: {
@@ -14,13 +15,16 @@ module.exports = {
 			},
 			colors: {
 				"button-bg": "#604cfa",
+				"button-dark" : "#7869e7",
+				dark: "#5644e1",
+
 			},
 			fontSize: {
 				"10xl": "9rem",
 			},
 			borderRadius: {
 				"4xl": "2rem",
-			}
+			},
 		},
 	},
 	plugins: [],

@@ -1,20 +1,26 @@
+"use client";
 import { ArrowDownIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Nav from "./ui/nav";
+import { useState } from "react";
+import clsx from "clsx";
 
 export default function Home() {
 	return (
 		<>
 			<Nav></Nav>
-			<main className="mt-12 px-20">
+			<main className={`mt-12 px-20 `}>
 				<div className="flex justify-between items-center">
-					<div className="w-6/12 flex flex-col justify-between" style={{height: "665px"}}>
+					<div
+						className="w-6/12 flex flex-col justify-between"
+						style={{ height: "665px" }}
+					>
 						<h1 className="text-9xl  font-bold">
 							WELCOME, I'M CRYPTO
 						</h1>
 						<div className="flex items-center">
 							<h1 className="text-9xl mr-8 font-bold">SETH</h1>
-							<button className="h-24 w-64 flex items-center justify-center outline-2 outline-slate-200 outline rounded-4xl">
+							<button className="h-24 w-64 flex items-center justify-center outline-2 outline-slate-200 dark:outline-button-dark outline rounded-4xl">
 								<Image
 									src="/yt-logo.png"
 									width={60}
@@ -34,7 +40,7 @@ export default function Home() {
 							aliquid nihil! Tempore rem pariatur eligendi enim.
 						</p>
 						<div className="flex items-center mt-8">
-							<button className="rounded-full bg-white p-5 w-16 h-16 antialiased mr-6">
+							<button className="rounded-full bg-white dark:bg-button-dark p-5 w-16 h-16 antialiased mr-6">
 								<ArrowDownIcon />
 							</button>
 							Scroll Down
