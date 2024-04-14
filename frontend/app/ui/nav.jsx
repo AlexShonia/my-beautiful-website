@@ -1,7 +1,6 @@
 import { Bars3BottomLeftIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Button from "./button";
-import clsx from "clsx";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
@@ -11,25 +10,20 @@ function Nav() {
 
 	console.log(resolvedTheme);
 	useEffect(() => setMounted(true), []);
+
+	function chooseLogo() {
+		if (!mounted) return "/loading-logo.png";
+		return resolvedTheme === "dark" ? "/logo-dark.png" : "/logo-light.png";
+	}
 	return (
 		<div className={`py-6 px-20 flex justify-between items-center`}>
 			<div className="flex w-3/12 justify-start">
-				{console.log(resolvedTheme)}
-				{resolvedTheme === "dark" ? (
-					<Image
-						src="/logo-dark.png"
-						width={60}
-						height={45}
-						className="mr-3"
-					/>
-				) : (
-					<Image
-						src="/logo-light.png"
-						width={60}
-						height={45}
-						className="mr-3"
-					/>
-				)}
+				<Image
+					src={chooseLogo()}
+					width={60}
+					height={60}
+					className="mr-3"
+				/>
 				<h1 className="text-xl flex items-center font-bold mr-6">
 					CRYPTO SETH
 				</h1>
