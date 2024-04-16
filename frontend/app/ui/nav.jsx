@@ -16,7 +16,7 @@ function Nav() {
 		return resolvedTheme === "dark" ? "/logo-dark.png" : "/logo-light.png";
 	}
 	return (
-		<div className={`py-6 px-20 flex justify-between items-center`}>
+		<div className="sm:py-6 sm:px-20 flex justify-between items-center">
 			<div className="flex w-3/12 justify-start">
 				<Image
 					src={chooseLogo()}
@@ -27,7 +27,6 @@ function Nav() {
 				<h1 className="text-xl flex items-center font-bold mr-6">
 					CRYPTO SETH
 				</h1>
-
 				<label class="inline-flex items-center cursor-pointer">
 					<input
 						type="checkbox"
