@@ -41,9 +41,12 @@ export default function Home() {
 							aliquid nihil! Tempore rem pariatur eligendi enim.
 						</p>
 						<div className="flex items-center mt-8">
-							<button className="rounded-full bg-white dark:bg-button-dark p-5 w-16 h-16 antialiased mr-6">
+							<a
+								className="rounded-full bg-white dark:bg-button-dark p-5 w-16 h-16 antialiased mr-6"
+								href="#myActivities"
+							>
 								<ArrowDownIcon />
-							</button>
+							</a>
 							Scroll Down
 						</div>
 					</div>
@@ -54,7 +57,10 @@ export default function Home() {
 						height={665}
 					/>
 				</div>
-				<div className="mt-40 flex flex-col items-center justify-center w-8/12">
+				<div
+					className="pt-4 mt-36 flex flex-col items-center justify-center w-8/12 "
+					id="myActivities"
+				>
 					<button className="text-button-dark font-medium text-lg bg-light-purple rounded-full p-2 px-5">
 						My activites
 					</button>
