@@ -43,9 +43,9 @@ function Nav() {
 				</label>
 			</div>
 			<div className="flex w-3/12 justify-between font-medium">
-				<h2 className="text-lg">Membership</h2>
-				<h2 className="text-lg">Courses</h2>
-				<h2 className="text-lg">Contact</h2>
+				<button className="text-lg">Membership</button>
+				<button className="text-lg">Courses</button>
+				<button className="text-lg">Contact</button>
 			</div>
 			<div className="flex w-3/12 justify-end space-x-4">
 				<Button>• &nbsp;BECOME A MEMBER</Button>
