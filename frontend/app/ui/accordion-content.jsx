@@ -4,12 +4,12 @@ import Image from "next/image";
 
 function AccordionContent({ isOpen }) {
 	return (
-		<div className="flex ml-6">
+		<div className="flex ml-6 py-8">
 			<div className="overflow-hidden px-8 flex flex-col justify-between">
 				<h3 className="text-5xl font-bold w-9/12">
 					YOUTUBE SHORT HEADING GOES HERE
 				</h3>
-				<p className="w-10/12 pb-6">
+				<p className="w-10/12 pb-4">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Praesentium possimus, aliquam tempora esse libero itaque
 					veritatis molestiae fuga debitis blanditiis laboriosam
@@ -18,7 +18,7 @@ function AccordionContent({ isOpen }) {
 					illum iure sapiente.
 				</p>
 				<Image
-					className="rounded-3xl pb-12"
+					className="rounded-3xl"
 					src="/youtuber3.png"
 					width={850}
 					height={665}
