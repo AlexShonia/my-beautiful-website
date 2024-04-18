@@ -8,7 +8,6 @@ function Nav() {
 	const [mounted, setMounted] = useState(false);
 	const { setTheme, resolvedTheme } = useTheme();
 
-	console.log(resolvedTheme);
 	useEffect(() => setMounted(true), []);
 
 	function chooseLogo() {
@@ -16,7 +15,7 @@ function Nav() {
 		return resolvedTheme === "dark" ? "/logo-dark.png" : "/logo-light.png";
 	}
 	return (
-		<div className="sm:py-6 sm:px-20 flex justify-between items-center">
+		<nav className="sm:py-6 sm:w-[92%] mx-auto flex justify-between items-center">
 			<div className="flex w-3/12 justify-start">
 				<Image
 					src={chooseLogo()}
@@ -24,7 +23,7 @@ function Nav() {
 					height={60}
 					className="mr-3"
 				/>
-				<h1 className="text-xl flex items-center font-bold mr-6">
+				<h1 className="md:text-xl flex items-center font-bold mr-6">
 					CRYPTO SETH
 				</h1>
 				<label class="inline-flex items-center cursor-pointer">
@@ -42,7 +41,7 @@ function Nav() {
 					<span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300" />
 				</label>
 			</div>
-			<div className="flex w-3/12 justify-between font-medium">
+			<div className="flex md:flex-row flex-col w-3/12 justify-between font-medium">
 				<button className="text-lg">Membership</button>
 				<button className="text-lg">Courses</button>
 				<button className="text-lg">Contact</button>
@@ -53,7 +52,7 @@ function Nav() {
 					<Bars3BottomLeftIcon />
 				</button>
 			</div>
-		</div>
+		</nav>
 	);
 }
 

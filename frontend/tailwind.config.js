@@ -20,6 +20,7 @@ module.exports = {
 				dark: "#5644e1",
 			},
 			fontSize: {
+				0: 0,
 				"10xl": "9rem",
 			},
 			borderRadius: {
