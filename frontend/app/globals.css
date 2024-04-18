@@ -61,8 +61,8 @@ input[type='number']::-webkit-outer-spin-button {
 @keyframes progress-bar {
   from {width: 0;
   }
-  83% {width: 99vw;}
-  to {width: 99vw; 
+  83% {width: 100vw;}
+  to {width: 100vw; 
 }
 }
 
