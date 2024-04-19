@@ -24,7 +24,7 @@ export default function Home() {
 				<Loading></Loading>
 			) : (
 				<>
-					<header>
+					<header className="overflow-hidden">
 						<Nav></Nav>
 					</header>
 					<main className="sm:mt-12 sm:w-[92%] mx-auto xs:mt-0 flex flex-col items-center justify-center">
@@ -33,14 +33,23 @@ export default function Home() {
 								className="sm:w-6/12 flex flex-col justify-between xs:w-full"
 								style={{ height: "665px" }}
 							>
-								<h1 className="2xl:text-9xl xl:text-8xl lg:text-7xl font-bold ">
-									WELCOME, I'M CRYPTO
-								</h1>
-								<div className="flex items-center">
-									<h1 className="2xl:text-9xl xl:text-8xl lg:text-7xl mr-8 font-bold">
-										SETH
+								<div className="overflow-hidden">
+									<h1 className="text-appear 2xl:text-9xl xl:text-8xl lg:text-7xl font-bold ">
+										WELCOME,
 									</h1>
-									<button className="h-24 w-64 flex items-center justify-center outline-2 outline-slate-200 dark:outline-button-dark outline rounded-4xl">
+								</div>
+								<div className="overflow-hidden">
+									<h1 className="text-appear 2xl:text-9xl xl:text-8xl lg:text-7xl font-bold ">
+										I'M CRYPTO
+									</h1>
+								</div>
+								<div className="flex items-center">
+									<div className="overflow-hidden">
+										<h1 className="text-appear 2xl:text-9xl xl:text-8xl lg:text-7xl mr-8 font-bold">
+											SETH
+										</h1>
+									</div>
+									<button className="yt-fade-in opacity-0 h-24 w-64 flex items-center justify-center outline-2 outline-slate-200 dark:outline-button-dark outline rounded-4xl">
 										<Image
 											src="/yt-logo.png"
 											width={60}
@@ -52,7 +61,7 @@ export default function Home() {
 										</div>
 									</button>
 								</div>
-								<p className="font-medium w-2/3 my-9">
+								<p className="text-fade-in opacity-0 font-medium w-2/3 my-9">
 									Lorem ipsum dolor sit amet consectetur
 									adipisicing elit. Tempore rem pariatur
 									eligendi enim, expedita iste minima
@@ -61,21 +70,21 @@ export default function Home() {
 									inventore aliquid nihil! Tempore rem
 									pariatur eligendi enim.
 								</p>
-								<div className="flex items-center mt-8">
+								<div className="fade-in opacity-0 flex items-center mt-8">
 									<a
 										className="rounded-full bg-white dark:bg-button-dark p-5 w-16 h-16 antialiased mr-6"
 										href="#myActivities"
 									>
 										{/* TODO: animate better */}
-										<div className="animate-bounce">
-											<ArrowDownIcon />
+										<div className="animate-bounce flex justify-center">
+											<ArrowDownIcon height={38} />
 										</div>
 									</a>
 									Scroll Down
 								</div>
 							</div>
 							<Image
-								className="rounded-3xl w-5/12"
+								className="fade-in opacity-0 rounded-3xl w-5/12"
 								src="/youtuber1.png"
 								width={650}
 								height={665}

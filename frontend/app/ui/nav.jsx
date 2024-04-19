@@ -15,7 +15,7 @@ function Nav() {
 		return resolvedTheme === "dark" ? "/logo-dark.png" : "/logo-light.png";
 	}
 	return (
-		<nav className="sm:py-6 sm:w-[92%] mx-auto flex justify-between items-center">
+		<nav className="nav-appear sm:py-6 sm:w-[92%] mx-auto flex justify-between items-center">
 			<div className="flex w-3/12 justify-start">
 				<Image
 					src={chooseLogo()}
