@@ -47,7 +47,9 @@ function Nav() {
 				<button className="text-lg">Contact</button>
 			</div>
 			<div className="flex w-3/12 justify-end space-x-4">
-				<Button>• &nbsp;BECOME A MEMBER</Button>
+				<Button>
+					<div className="dot-pulse">•</div>&nbsp; BECOME A MEMBER
+				</Button>
 				<button className="rounded-full bg-white dark:bg-button-dark p-5 w-16 h-16 antialiased">
 					<Bars3BottomLeftIcon />
 				</button>
