@@ -31,8 +31,8 @@ function Loading() {
 	return (
 		<>
 			{mounted && (
-				<div className=" bg-light-purple fade-away">
-					<div className="progress-bar bg-button-bg w-0 h-4" />
+				<div className="dark:bg-button-dark bg-light-purple fade-away">
+					<div className="dark:bg-white progress-bar bg-button-bg w-0 h-4"/>
 				</div>
 			)}
 			<div className="sm:w-[92%] sm:h-[84vh] mt-[8vh] mx-auto flex flex-col justify-between fade-away">
