@@ -31,7 +31,7 @@ input[type='number']::-webkit-outer-spin-button {
   from {color: #5644e1;
     transform: translateY(100%);
   }
-  to {color: black; 
+  to { 
     transform: translateY(0);
 }
 }
@@ -63,7 +63,7 @@ input[type='number']::-webkit-outer-spin-button {
   from {color: #5644e1;
     opacity: 0.0;
   }
-  to {color: black; 
+  to { 
     opacity: 1.0;
 }
 }
